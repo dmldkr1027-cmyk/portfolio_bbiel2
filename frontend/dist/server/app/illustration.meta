@@ -1,0 +1,18 @@
+{
+  "status": 307,
+  "headers": {
+    "location": "/illustration/ld",
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(portfolio)/layout,_N_T_/(portfolio)/illustration/layout,_N_T_/(portfolio)/illustration/page,_N_T_/illustration"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHBvcnRmb2xpbyk/illustration/__PAGE__",
+    "/!KHBvcnRmb2xpbyk/illustration",
+    "/!KHBvcnRmb2xpbyk",
+    "/_index",
+    "/_head"
+  ]
+}

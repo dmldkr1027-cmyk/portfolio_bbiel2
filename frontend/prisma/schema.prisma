@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id          String   @id @default(uuid())
+  imageUrl    String?
+  homeBgUrl   String?
+  name        String?
+  birthdate   String?
+  location    String?
+  mobile      String?
+  email       String?
+  twitter     String?
+  bio         String?
+  updatedAt   DateTime @default(now()) @updatedAt
+  textBlocks  TextBlock[]
+}
+
+model TextBlock {
+  id        String  @id @default(uuid())
+  title     String?
+  content   String
+  order     Int
+  profileId String
+  profile   Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model Artwork {
+  id           String   @id @default(uuid())
+  title        String?
+  description  String?
+  thumbnailUrl String?
+  imageUrls    String // Stored as JSON string
+  category     String
+  subcategory  String?
+  createdAt    DateTime @default(now())
+  type         String?
+  content      String?
+  order        Int      @default(autoincrement())
+}
+
+model WebtoonWork {
+  id       String @id @default(uuid())
+  title    String
+  subtitle String
+  coverImg String
+  hoverImg String
+  intro    String?  @default("")
+  order    Int    @default(autoincrement())
+}

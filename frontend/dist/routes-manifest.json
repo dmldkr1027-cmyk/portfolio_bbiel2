@@ -1,0 +1,166 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/artworks/[id]",
+      "regex": "^/api/artworks/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/artworks/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/artworks/[id]/reorder",
+      "regex": "^/api/artworks/([^/]+?)/reorder(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/artworks/(?<nxtPid>[^/]+?)/reorder(?:/)?$"
+    },
+    {
+      "page": "/api/webtoon/[workId]/intro",
+      "regex": "^/api/webtoon/([^/]+?)/intro(?:/)?$",
+      "routeKeys": {
+        "nxtPworkId": "nxtPworkId"
+      },
+      "namedRegex": "^/api/webtoon/(?<nxtPworkId>[^/]+?)/intro(?:/)?$"
+    },
+    {
+      "page": "/api/webtoon-works/[id]",
+      "regex": "^/api/webtoon\\-works/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/webtoon\\-works/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/illustration/[category]",
+      "regex": "^/illustration/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcategory": "nxtPcategory"
+      },
+      "namedRegex": "^/illustration/(?<nxtPcategory>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/webtoon/[workId]",
+      "regex": "^/webtoon/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPworkId": "nxtPworkId"
+      },
+      "namedRegex": "^/webtoon/(?<nxtPworkId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/artworks",
+      "regex": "^/api/artworks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/artworks(?:/)?$"
+    },
+    {
+      "page": "/api/file",
+      "regex": "^/api/file(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/file(?:/)?$"
+    },
+    {
+      "page": "/api/profile",
+      "regex": "^/api/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/profile(?:/)?$"
+    },
+    {
+      "page": "/api/upload",
+      "regex": "^/api/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/upload(?:/)?$"
+    },
+    {
+      "page": "/api/webtoon-works",
+      "regex": "^/api/webtoon\\-works(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/webtoon\\-works(?:/)?$"
+    },
+    {
+      "page": "/casual",
+      "regex": "^/casual(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/casual(?:/)?$"
+    },
+    {
+      "page": "/illustration",
+      "regex": "^/illustration(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/illustration(?:/)?$"
+    },
+    {
+      "page": "/profile",
+      "regex": "^/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/profile(?:/)?$"
+    },
+    {
+      "page": "/webtoon",
+      "regex": "^/webtoon(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/webtoon(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
