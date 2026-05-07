@@ -19,8 +19,20 @@ async function copyEntry(source, destination) {
   await cp(source, destination, { dereference: true });
 }
 
+async function resolveStandaloneSource() {
+  const preferredSource = path.join(frontendDist, 'standalone', 'frontend');
+  const fallbackSource = path.join(frontendDist, 'standalone');
+
+  try {
+    await stat(path.join(preferredSource, 'server.js'));
+    return preferredSource;
+  } catch {
+    return fallbackSource;
+  }
+}
+
 async function main() {
-  const standaloneSource = path.join(frontendDist, 'standalone');
+  const standaloneSource = await resolveStandaloneSource();
   const staticSource = path.join(frontendDist, 'static');
   const backendStandalone = path.join(backendDist, 'standalone');
 

@@ -1,0 +1,13 @@
+{
+  "name": "portfolio_bbiel2",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "postinstall": "npm --prefix backend run postinstall && npm --prefix frontend run build",
+    "start": "node backend/server.js"
+  }
+}
