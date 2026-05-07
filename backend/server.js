@@ -9,5 +9,7 @@ if (!fs.existsSync(standaloneServerPath)) {
   );
 }
 
+process.env.HOSTNAME = '0.0.0.0';
+process.env.HOST = '0.0.0.0';
 process.chdir(standaloneDir);
 require(standaloneServerPath);
