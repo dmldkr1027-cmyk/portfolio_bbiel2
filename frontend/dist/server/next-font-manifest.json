@@ -1,27 +1,27 @@
 {
   "app": {
-    "[project]/app/(portfolio)/casual/page": [
+    "[project]/frontend/app/(portfolio)/casual/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/(portfolio)/illustration/[category]/page": [
+    "[project]/frontend/app/(portfolio)/illustration/[category]/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/(portfolio)/illustration/page": [
+    "[project]/frontend/app/(portfolio)/illustration/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/(portfolio)/page": [
+    "[project]/frontend/app/(portfolio)/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/(portfolio)/profile/page": [
+    "[project]/frontend/app/(portfolio)/profile/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/(portfolio)/webtoon/[workId]/page": [
+    "[project]/frontend/app/(portfolio)/webtoon/[workId]/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/(portfolio)/webtoon/page": [
+    "[project]/frontend/app/(portfolio)/webtoon/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ],
-    "[project]/app/_not-found/page": [
+    "[project]/frontend/app/_not-found/page": [
       "static/media/fca78c2ee6cec166-s.p.0kizb7t94.kuf.woff2"
     ]
   },
