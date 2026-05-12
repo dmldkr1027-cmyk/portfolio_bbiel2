@@ -5,7 +5,7 @@ import AdminHomeBgUpload from "@/components/admin-home-bg-upload";
 export const dynamic = 'force-dynamic'; // Ensures fresh data
 
 export default async function HomePage() {
-  const profile = await prisma.profile.findFirst();
+  const profile = await prisma.profile.findFirst().catch(() => null);
   const homeBgUrl = profile?.homeBgUrl;
 
   const getImageSrc = (url: string | null) => {
