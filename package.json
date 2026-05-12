@@ -7,7 +7,8 @@
     "frontend"
   ],
   "scripts": {
-    "postinstall": "npm --prefix backend install --package-lock=false && npm --prefix frontend install --package-lock=false && npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build",
+    "postinstall": "npm --prefix backend install --package-lock=false && npm --prefix frontend install --package-lock=false && npm run build",
     "start": "node backend/server.js"
   }
 }

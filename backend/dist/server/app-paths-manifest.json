@@ -1,0 +1,20 @@
+{
+  "/(portfolio)/casual/page": "app/(portfolio)/casual/page.js",
+  "/(portfolio)/illustration/[category]/page": "app/(portfolio)/illustration/[category]/page.js",
+  "/(portfolio)/illustration/page": "app/(portfolio)/illustration/page.js",
+  "/(portfolio)/page": "app/(portfolio)/page.js",
+  "/(portfolio)/profile/page": "app/(portfolio)/profile/page.js",
+  "/(portfolio)/webtoon/[workId]/page": "app/(portfolio)/webtoon/[workId]/page.js",
+  "/(portfolio)/webtoon/page": "app/(portfolio)/webtoon/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/artworks/[id]/reorder/route": "app/api/artworks/[id]/reorder/route.js",
+  "/api/artworks/[id]/route": "app/api/artworks/[id]/route.js",
+  "/api/artworks/route": "app/api/artworks/route.js",
+  "/api/file/route": "app/api/file/route.js",
+  "/api/profile/route": "app/api/profile/route.js",
+  "/api/upload/route": "app/api/upload/route.js",
+  "/api/webtoon-works/[id]/route": "app/api/webtoon-works/[id]/route.js",
+  "/api/webtoon-works/route": "app/api/webtoon-works/route.js",
+  "/api/webtoon/[workId]/intro/route": "app/api/webtoon/[workId]/intro/route.js"
+}

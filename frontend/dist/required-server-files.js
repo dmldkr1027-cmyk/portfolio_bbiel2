@@ -105,7 +105,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\KUMA_LAB\\Documents\\nayeonpage-v1.7",
+    "outputFileTracingRoot": "C:\\Users\\next352u3\\Documents\\nayeonpage-v1.8",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -167,7 +167,7 @@ self.__SERVER_FILES_MANIFEST={
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 19,
+      "cpus": 23,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -305,11 +305,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Users\\KUMA_LAB\\Documents\\nayeonpage-v1.7"
+      "root": "C:\\Users\\next352u3\\Documents\\nayeonpage-v1.8"
     },
     "distDirRoot": "dist"
   },
-  "appDir": "C:\\Users\\KUMA_LAB\\Documents\\nayeonpage-v1.7\\frontend",
+  "appDir": "C:\\Users\\next352u3\\Documents\\nayeonpage-v1.8\\frontend",
   "relativeAppDir": "frontend",
   "files": [
     "dist\\routes-manifest.json",
